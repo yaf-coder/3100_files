@@ -1,0 +1,11 @@
+---
+triple:          'arm64-apple-darwin'
+binary-path:     monopoly
+relocations:
+  - { offsetInCU: 0x26, offset: 0x26, size: 0x8, addend: 0x0, symName: _transaction, symObjAddr: 0x0, symBinAddr: 0x100003664, symSize: 0x94 }
+  - { offsetInCU: 0x48, offset: 0x48, size: 0x8, addend: 0x0, symName: _transaction, symObjAddr: 0x0, symBinAddr: 0x100003664, symSize: 0x94 }
+  - { offsetInCU: 0x8C, offset: 0x8C, size: 0x8, addend: 0x0, symName: _one_round, symObjAddr: 0x94, symBinAddr: 0x1000036F8, symSize: 0x23C }
+  - { offsetInCU: 0x15C, offset: 0x15C, size: 0x8, addend: 0x0, symName: _print_result, symObjAddr: 0x2D0, symBinAddr: 0x100003934, symSize: 0x194 }
+  - { offsetInCU: 0x1E2, offset: 0x1E2, size: 0x8, addend: 0x0, symName: _monopoly, symObjAddr: 0x464, symBinAddr: 0x100003AC8, symSize: 0xC8 }
+  - { offsetInCU: 0x24C, offset: 0x24C, size: 0x8, addend: 0x0, symName: _main, symObjAddr: 0x52C, symBinAddr: 0x100003B90, symSize: 0x32C }
+...

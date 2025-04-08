@@ -1,0 +1,21 @@
+---
+triple:          'arm64-apple-darwin'
+binary-path:     linkedlist-main
+relocations:
+  - { offsetInCU: 0x26, offset: 0x26, size: 0x8, addend: 0x0, symName: _main, symObjAddr: 0x0, symBinAddr: 0x1000032B0, symSize: 0x37C }
+  - { offsetInCU: 0x48, offset: 0x48, size: 0x8, addend: 0x0, symName: _main, symObjAddr: 0x0, symBinAddr: 0x1000032B0, symSize: 0x37C }
+  - { offsetInCU: 0x11C, offset: 0x11C, size: 0x8, addend: 0x0, symName: _print_help, symObjAddr: 0x37C, symBinAddr: 0x10000362C, symSize: 0x2C }
+  - { offsetInCU: 0x26, offset: 0x1C0, size: 0x8, addend: 0x0, symName: _error_message, symObjAddr: 0x0, symBinAddr: 0x100003658, symSize: 0xBC }
+  - { offsetInCU: 0x91, offset: 0x22B, size: 0x8, addend: 0x0, symName: _error_message, symObjAddr: 0x0, symBinAddr: 0x100003658, symSize: 0xBC }
+  - { offsetInCU: 0xC3, offset: 0x25D, size: 0x8, addend: 0x0, symName: _new_node, symObjAddr: 0xBC, symBinAddr: 0x100003714, symSize: 0x64 }
+  - { offsetInCU: 0xF9, offset: 0x293, size: 0x8, addend: 0x0, symName: _prepend, symObjAddr: 0x120, symBinAddr: 0x100003778, symSize: 0x24 }
+  - { offsetInCU: 0x12F, offset: 0x2C9, size: 0x8, addend: 0x0, symName: _find_node, symObjAddr: 0x144, symBinAddr: 0x10000379C, symSize: 0x74 }
+  - { offsetInCU: 0x165, offset: 0x2FF, size: 0x8, addend: 0x0, symName: _find_last, symObjAddr: 0x1B8, symBinAddr: 0x100003810, symSize: 0x58 }
+  - { offsetInCU: 0x18D, offset: 0x327, size: 0x8, addend: 0x0, symName: _append, symObjAddr: 0x210, symBinAddr: 0x100003868, symSize: 0x70 }
+  - { offsetInCU: 0x1D1, offset: 0x36B, size: 0x8, addend: 0x0, symName: _delete_list, symObjAddr: 0x280, symBinAddr: 0x1000038D8, symSize: 0x58 }
+  - { offsetInCU: 0x215, offset: 0x3AF, size: 0x8, addend: 0x0, symName: _print_list, symObjAddr: 0x2D8, symBinAddr: 0x100003930, symSize: 0x7C }
+  - { offsetInCU: 0x239, offset: 0x3D3, size: 0x8, addend: 0x0, symName: _print_node, symObjAddr: 0x354, symBinAddr: 0x1000039AC, symSize: 0x50 }
+  - { offsetInCU: 0x25D, offset: 0x3F7, size: 0x8, addend: 0x0, symName: _print_list_details, symObjAddr: 0x3A4, symBinAddr: 0x1000039FC, symSize: 0x4C }
+  - { offsetInCU: 0x281, offset: 0x41B, size: 0x8, addend: 0x0, symName: _delete_node, symObjAddr: 0x3F0, symBinAddr: 0x100003A48, symSize: 0xF4 }
+  - { offsetInCU: 0x2D3, offset: 0x46D, size: 0x8, addend: 0x0, symName: _reverse_list, symObjAddr: 0x4E4, symBinAddr: 0x100003B3C, symSize: 0xA8 }
+...

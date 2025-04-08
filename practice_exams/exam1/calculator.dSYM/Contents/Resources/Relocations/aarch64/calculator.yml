@@ -1,0 +1,19 @@
+---
+triple:          'arm64-apple-darwin'
+binary-path:     calculator
+relocations:
+  - { offsetInCU: 0x26, offset: 0x26, size: 0x8, addend: 0x0, symName: _addition, symObjAddr: 0x0, symBinAddr: 0x100003618, symSize: 0x148 }
+  - { offsetInCU: 0x41, offset: 0x41, size: 0x8, addend: 0x0, symName: _addition, symObjAddr: 0x0, symBinAddr: 0x100003618, symSize: 0x148 }
+  - { offsetInCU: 0xBD, offset: 0xBD, size: 0x8, addend: 0x0, symName: _subtraction, symObjAddr: 0x148, symBinAddr: 0x100003760, symSize: 0x13C }
+  - { offsetInCU: 0x12B, offset: 0x12B, size: 0x8, addend: 0x0, symName: _remove_leading_zeros, symObjAddr: 0x284, symBinAddr: 0x10000389C, symSize: 0x8C }
+  - { offsetInCU: 0x17D, offset: 0x17D, size: 0x8, addend: 0x0, symName: _main, symObjAddr: 0x310, symBinAddr: 0x100003928, symSize: 0x220 }
+  - { offsetInCU: 0x26, offset: 0x290, size: 0x8, addend: 0x0, symName: _error_message, symObjAddr: 0x0, symBinAddr: 0x100003B48, symSize: 0xC0 }
+  - { offsetInCU: 0x6D, offset: 0x2D7, size: 0x8, addend: 0x0, symName: _error_message, symObjAddr: 0x0, symBinAddr: 0x100003B48, symSize: 0xC0 }
+  - { offsetInCU: 0x9F, offset: 0x309, size: 0x8, addend: 0x0, symName: _new_node, symObjAddr: 0xC0, symBinAddr: 0x100003C08, symSize: 0x64 }
+  - { offsetInCU: 0xD5, offset: 0x33F, size: 0x8, addend: 0x0, symName: _prepend, symObjAddr: 0x124, symBinAddr: 0x100003C6C, symSize: 0x24 }
+  - { offsetInCU: 0x10B, offset: 0x375, size: 0x8, addend: 0x0, symName: _find_last, symObjAddr: 0x148, symBinAddr: 0x100003C90, symSize: 0x58 }
+  - { offsetInCU: 0x133, offset: 0x39D, size: 0x8, addend: 0x0, symName: _append, symObjAddr: 0x1A0, symBinAddr: 0x100003CE8, symSize: 0x70 }
+  - { offsetInCU: 0x177, offset: 0x3E1, size: 0x8, addend: 0x0, symName: _delete_list, symObjAddr: 0x210, symBinAddr: 0x100003D58, symSize: 0x58 }
+  - { offsetInCU: 0x1BB, offset: 0x425, size: 0x8, addend: 0x0, symName: _print_list, symObjAddr: 0x268, symBinAddr: 0x100003DB0, symSize: 0x70 }
+  - { offsetInCU: 0x1DF, offset: 0x449, size: 0x8, addend: 0x0, symName: _reverse_list, symObjAddr: 0x2D8, symBinAddr: 0x100003E20, symSize: 0x8C }
+...

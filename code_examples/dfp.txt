@@ -1,0 +1,34 @@
+fork():
+Remember that variables are duplicated for the child process. The parent and child have independent memory, so modifications in one do not affect the other (except for shared file descriptors, pipes, etc.).
+dup() and dup2():
+Duplicating a file descriptor lets you have multiple handles to the same file or pipe. When using redirection (for example, to capture a program’s output), dup2() is typically preferred because it lets you specify the target file descriptor (e.g., replacing standard output).
+pipe():
+Pipes create a unidirectional communication channel. One process writes to the pipe and the other reads. Always remember to close the unused ends in each process to avoid deadlocks.
+Keep these detailed points in mind when you design programs that require process creation and interprocess communication. Experiment with these examples and modify them to reinforce your understanding.
+
+0	STDIN_FILENO	Standard Input	        Reading user input
+1	STDOUT_FILENO	Standard Output	        Writing output
+2	STDERR_FILENO	Standard Error Output	Writing errors
+
+
+Access Mode Flags (Only one of these should be used at a time)
+These control the basic read/write behavior of the file:
+
+Flag	Description
+O_RDONLY	Open for read-only.
+O_WRONLY	Open for write-only.
+O_RDWR	Open for read and write.
+
+Flag	Description
+O_CREAT	Create the file if it doesn't exist. Requires a third argument (mode_t) for permissions.
+O_EXCL	Use with O_CREAT. If the file already exists, open() fails. (Prevents overwriting.)
+O_TRUNC	If the file exists and is opened for writing, truncate its length to 0.
+O_APPEND	Writes are always done at the end of the file, regardless of file position.
+O_NONBLOCK	Open in non-blocking mode. Read/write calls return immediately if they would block.
+O_SYNC	File writes are done synchronously: data is physically written to disk before write() returns.
+O_DSYNC	Like O_SYNC but only the file's data is flushed, not metadata.
+O_RSYNC	Read operations wait for all pending writes to complete (rarely used).
+O_NOFOLLOW	If the file is a symlink, fail with ELOOP.
+O_DIRECTORY	File must be a directory, or open() fails.
+O_CLOEXEC	Set the close-on-exec flag (FD_CLOEXEC) — file descriptor is automatically closed during exec() calls.
+O_TMPFILE	Create an unnamed temporary file (Linux-specific, requires flags like `O_RDWR

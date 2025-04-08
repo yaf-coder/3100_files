@@ -1,0 +1,14 @@
+Line 1:
+Open (or create) a file named test.txt for writing. The flags O_CREAT | O_WRONLY | O_TRUNC tell the system to create the file if it doesn’t exist, open it for writing, and truncate it to zero length. The mode 0644 sets its permissions.
+Line 2:
+Check if the file open operation returned a valid descriptor; if not, print an error and exit.
+Line 3:
+Call dup(fd) to duplicate the file descriptor; the new descriptor newfd now refers to the same file offset and file description as fd.
+Line 4:
+Verify that dup() did not fail.
+Line 5:
+Write a string to the file using the original descriptor fd. The two writes share the same file pointer.
+Line 6:
+Write a second string using newfd. Because both descriptors refer to the same open file description, the writes are done sequentially.
+Line 7:
+Both file descriptors are closed, ensuring resources are released.

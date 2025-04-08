@@ -1,0 +1,11 @@
+---
+triple:          'arm64-apple-darwin'
+binary-path:     diffusion
+relocations:
+  - { offsetInCU: 0x26, offset: 0x26, size: 0x8, addend: 0x0, symName: _one_particle, symObjAddr: 0x0, symBinAddr: 0x100003800, symSize: 0x1D8 }
+  - { offsetInCU: 0x54, offset: 0x54, size: 0x8, addend: 0x0, symName: _one_particle, symObjAddr: 0x0, symBinAddr: 0x100003800, symSize: 0x1D8 }
+  - { offsetInCU: 0x104, offset: 0x104, size: 0x8, addend: 0x0, symName: _density, symObjAddr: 0x1D8, symBinAddr: 0x1000039D8, symSize: 0x208 }
+  - { offsetInCU: 0x200, offset: 0x200, size: 0x8, addend: 0x0, symName: _print_result, symObjAddr: 0x3E0, symBinAddr: 0x100003BE0, symSize: 0xBC }
+  - { offsetInCU: 0x24E, offset: 0x24E, size: 0x8, addend: 0x0, symName: _diffusion, symObjAddr: 0x49C, symBinAddr: 0x100003C9C, symSize: 0xBC }
+  - { offsetInCU: 0x2C6, offset: 0x2C6, size: 0x8, addend: 0x0, symName: _main, symObjAddr: 0x558, symBinAddr: 0x100003D58, symSize: 0x184 }
+...

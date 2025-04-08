@@ -1,0 +1,16 @@
+---
+triple:          'arm64-apple-darwin'
+binary-path:     epidemic
+relocations:
+  - { offsetInCU: 0x26, offset: 0x26, size: 0x8, addend: 0x0, symName: _idx, symObjAddr: 0x0, symBinAddr: 0x100003094, symSize: 0x48 }
+  - { offsetInCU: 0xFB, offset: 0xFB, size: 0x8, addend: 0x0, symName: _idx, symObjAddr: 0x0, symBinAddr: 0x100003094, symSize: 0x48 }
+  - { offsetInCU: 0x13F, offset: 0x13F, size: 0x8, addend: 0x0, symName: _create_node, symObjAddr: 0x48, symBinAddr: 0x1000030DC, symSize: 0x84 }
+  - { offsetInCU: 0x176, offset: 0x176, size: 0x8, addend: 0x0, symName: _add_first, symObjAddr: 0xCC, symBinAddr: 0x100003160, symSize: 0x4C }
+  - { offsetInCU: 0x1A8, offset: 0x1A8, size: 0x8, addend: 0x0, symName: _remove_first, symObjAddr: 0x118, symBinAddr: 0x1000031AC, symSize: 0x68 }
+  - { offsetInCU: 0x1DE, offset: 0x1DE, size: 0x8, addend: 0x0, symName: _remove_all, symObjAddr: 0x180, symBinAddr: 0x100003214, symSize: 0x50 }
+  - { offsetInCU: 0x210, offset: 0x210, size: 0x8, addend: 0x0, symName: _location_match, symObjAddr: 0x1D0, symBinAddr: 0x100003264, symSize: 0x98 }
+  - { offsetInCU: 0x247, offset: 0x247, size: 0x8, addend: 0x0, symName: _hash, symObjAddr: 0x268, symBinAddr: 0x1000032FC, symSize: 0x70 }
+  - { offsetInCU: 0x26F, offset: 0x26F, size: 0x8, addend: 0x0, symName: _summary, symObjAddr: 0x2D8, symBinAddr: 0x10000336C, symSize: 0x1BC }
+  - { offsetInCU: 0x2EB, offset: 0x2EB, size: 0x8, addend: 0x0, symName: _one_round, symObjAddr: 0x494, symBinAddr: 0x100003528, symSize: 0x414 }
+  - { offsetInCU: 0x412, offset: 0x412, size: 0x8, addend: 0x0, symName: _main, symObjAddr: 0x8B8, symBinAddr: 0x10000394C, symSize: 0x508 }
+...

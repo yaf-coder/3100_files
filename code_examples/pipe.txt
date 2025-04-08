@@ -1,0 +1,30 @@
+Line 1:
+Declare an integer array pipefd[2] to hold the file descriptors returned by pipe().
+Line 2:
+Call pipe(pipefd). On success, pipefd[0] becomes the read end and pipefd[1] becomes the write end.
+Line 3:
+Check if pipe creation failed; if so, print an error and exit.
+Line 4:
+Call fork() to create a new process.
+Line 5 (Child):
+In the child process, close the read end because it will only write.
+Line 6 (Child):
+Define the message string to be written to the pipe.
+Line 7 (Child):
+Write the message into the pipe. The size is computed with strlen(message) + 1 to include the null terminator.
+Line 8 (Child):
+Close the write end after sending the message.
+Line 9 (Child):
+Terminate the child process.
+Line 10 (Parent):
+In the parent process, close the write end because it will only read.
+Line 11 (Parent):
+Define a buffer large enough to hold the incoming message.
+Line 12 (Parent):
+Call read() on the read end to get the message from the pipe.
+Line 13 (Parent):
+Print the message received.
+Line 14 (Parent):
+Close the read end as it is no longer needed.
+Line 15 (Parent):
+Use wait(NULL) to wait for the child process to finish before exiting.

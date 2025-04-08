@@ -1,0 +1,10 @@
+---
+triple:          'arm64-apple-darwin'
+binary-path:     squares
+relocations:
+  - { offsetInCU: 0x26, offset: 0x26, size: 0x8, addend: 0x0, symName: _print_array, symObjAddr: 0x0, symBinAddr: 0x100003C1C, symSize: 0x84 }
+  - { offsetInCU: 0x4D, offset: 0x4D, size: 0x8, addend: 0x0, symName: _print_array, symObjAddr: 0x0, symBinAddr: 0x100003C1C, symSize: 0x84 }
+  - { offsetInCU: 0x9B, offset: 0x9B, size: 0x8, addend: 0x0, symName: _absolute, symObjAddr: 0x84, symBinAddr: 0x100003CA0, symSize: 0x3C }
+  - { offsetInCU: 0xC3, offset: 0xC3, size: 0x8, addend: 0x0, symName: _sort_squares, symObjAddr: 0xC0, symBinAddr: 0x100003CDC, symSize: 0x170 }
+  - { offsetInCU: 0x157, offset: 0x157, size: 0x8, addend: 0x0, symName: _main, symObjAddr: 0x230, symBinAddr: 0x100003E4C, symSize: 0xE0 }
+...

@@ -1,0 +1,12 @@
+Line 1:
+Open or create a file named output.txt. The mode 0644 sets read and write permissions.
+Line 2:
+Check if the file was successfully opened; if not, report an error and terminate.
+Line 3:
+Call dup2(fd, STDOUT_FILENO). This duplicates fd into file descriptor 1 (the standard output). If standard output was open previously, it is automatically closed.
+Line 4:
+Check if dup2() failed and handle the error.
+Line 5:
+Call printf(). Since standard output has been redirected, this string will be written to output.txt instead of the console.
+Line 6:
+Close the original file descriptor. The redirection remains in effect for standard output until the process ends.

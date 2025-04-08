@@ -1,0 +1,10 @@
+Line 1:
+Call fork(). It returns a value of type pid_t which is stored in pid.
+Lines 2–4:
+Check if pid < 0, which indicates an error occurred during the fork. Use perror() to print a descriptive error message and exit with an error code.
+Lines 5–7:
+If pid == 0, this branch executes in the child process. The child prints its PID using getpid() and exits.
+Lines 8–10:
+In the parent process (where pid is not zero), print both the parent’s and the child’s PID. Then call wait(NULL) so that the parent waits until the child process completes.
+Line 11:
+The parent process terminates normally.
